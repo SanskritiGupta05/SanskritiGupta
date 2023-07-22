@@ -119,9 +119,18 @@
         padding: 10px 10% 0px 10%;
     }
     #hero-img{
-        width: 100%;
+        width: 102%;
         height: 100%;
         margin: 0 auto;
         display: flex;
+        padding: 10px 0;
+    }
+    .hero-one h1{
+        padding: 20px 0;
+        font-weight: bold;
+        font-size: 35px;;
+    }
+    .hero-one p{
+        font-size: 15px;
     }
 }
