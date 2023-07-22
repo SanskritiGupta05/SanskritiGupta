@@ -1,14 +1,14 @@
 # CheckList ✅
 
-- [ ] Decide Color Palette
-- [ ] Decide Sections
-- [ ] Decide Fonts
-- [ ] Decide Inspirations
+- [x] Decide Color Palette
+- [x] Decide Sections
+- [x] Decide Fonts
+- [x] Decide Inspirations
 
 ## Code 👩🏻‍💻
 
-- [ ] Navbar
-- [ ] Hero Section
+- [x] Navbar
+- [x] Hero Section
 - [ ] About
 - [ ] Connect
 - [ ] Skills
