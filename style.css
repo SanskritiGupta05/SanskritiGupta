@@ -1,6 +1,7 @@
 *{
     --primary-color: #8484e0;
     --primary-color-light: #9f9fe1;
+    --primary-color-dark: #6b6be0;
     --pink-light: #eec9cf;
     --blue-primary: #3e64a3;
     --blue-secondary: #6d90d2;
@@ -14,6 +15,15 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+#btn{
+    background-color: var(--primary-color-dark);
+    color: white;
+    font-weight: bolder;
+    font-size: large;
+}
+#btn:hover{
+    background-color:var(--primary-color) ;
 }
 .hero{
     display: flex;
