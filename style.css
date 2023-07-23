@@ -9,7 +9,8 @@
     font-family: 'Montserrat', sans-serif;
 }
 #title{
-    background-image: linear-gradient(to right bottom, #e7e7f9, #eee6f5, #f3e5f0, #f6e5ec, #f6e6e8);
+    /* background-image: linear-gradient(to right bottom, #d9e5f9, #d1dffb, #cad8fc, #c5d1fd, #c1c9fd, #ccc7fa, #d6c5f6, #dfc4f2, #eecceb, #f6d5e7, #f8e0e7, #f6eced); */
+    background-image: linear-gradient(to right bottom, #e1eaf9, #dae5fa, #d5e0fb, #d0dafc, #cdd4fc, #d5d2fa, #ddd1f7, #e4cff3, #efd4ed, #f6dbea, #f7e3e9, #f6eced);
 }
 .nav-link{
     display: flex;
@@ -116,8 +117,6 @@
 }
 
 
-
-
 @media (min-width: 768px) {
   .button-56 {
     padding: 0 40px;
@@ -133,7 +132,7 @@
         height: 100%;
         margin: 0 auto;
         display: flex;
-        padding: 10px 0 40px 0;
+        padding: 0 0 40px 0;
     }
     .hero-one h1{
         padding: 20px 0;
