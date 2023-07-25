@@ -8,6 +8,23 @@
     --light-teal: #b1e5ee;
     font-family: 'Montserrat', sans-serif;
 }
+
+body h1{
+  color: var(--primary-color);
+  padding: 10px 0;
+  font-weight: bolder;
+  font-size: 50px;
+  font-family: 'Lobster', cursive;
+}
+
+body h2{
+  color: var(--primary-color);
+  padding: 10px 0;
+  font-weight: bolder;
+  font-size: 35px;
+  font-family: 'Lobster', cursive;
+}
+
 #title{
     /* background-image: linear-gradient(to right bottom, #d9e5f9, #d1dffb, #cad8fc, #c5d1fd, #c1c9fd, #ccc7fa, #d6c5f6, #dfc4f2, #eecceb, #f6d5e7, #f8e0e7, #f6eced); */
     background-image: linear-gradient(to right bottom, #e1eaf9, #dae5fa, #d5e0fb, #d0dafc, #cdd4fc, #d5d2fa, #ddd1f7, #e4cff3, #efd4ed, #f6dbea, #f7e3e9, #f6eced);
@@ -32,13 +49,8 @@
     align-items: center;
     text-align: center;
 }
-.hero-one h1{
-    color: var(--primary-color);
-    padding: 10px 0;
-    font-weight: bolder;
-    font-size: 50px;;
-    font-family: 'Lobster', cursive;
-}
+
+
 .hero-one{
     margin-top: 20px;
     padding: 10px 20% 0px 20%;
@@ -116,6 +128,30 @@
   border-radius: 10px;
 }
 
+.about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+.about-des h2{
+  padding-top: 30px;
+  text-align: center;
+}
+
+.about-des p{
+padding: 10px 20%;
+}
+
+.heading{
+  font-size: 30px;
+  font-weight:bolder;
+  padding: 20px 20%;
+  text-align: center;
+}
+
+
 
 @media (min-width: 768px) {
   .button-56 {
@@ -142,4 +178,10 @@
     .hero-one p{
         font-size: 15px;
     }
+    .about{
+      flex-direction: column;
+      padding: 20px;
+    }
+
+
 }
