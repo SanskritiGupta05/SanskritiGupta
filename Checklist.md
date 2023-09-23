@@ -9,10 +9,10 @@
 
 - [x] Navbar
 - [x] Hero Section
-- [ ] About
-- [ ] Connect
+- [x] About
+- [x] Connect
 - [ ] Skills
-- [ ] Projects
+- [x] Projects
 - [ ] Timeline
 - [ ] CV section
 - [ ] Footer
