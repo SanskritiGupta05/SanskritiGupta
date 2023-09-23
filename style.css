@@ -1,39 +1,64 @@
 *{
     --primary-color: #8484e0;
-    --primary-color-light: #9f9fe1;
+    --primary-color-light: #bfbffa;
     --primary-color-dark: #6b6be0;
     --pink-light: #eec9cf;
     --blue-primary: #3e64a3;
     --blue-secondary: #6d90d2;
     --light-teal: #b1e5ee;
+    --black: #000;
     font-family: 'Montserrat', sans-serif;
+    background-color: #000;
 }
 
+html{
+  scroll-behavior: smooth;
+}
+
+/* background: rgb(70,70,191);
+background: radial-gradient(circle, rgba(70,70,191,1) 0%, rgba(0,0,0,1) 100%); */
+
+
 body h1{
-  color: var(--primary-color);
-  padding: 10px 0;
+  color: var(--primary-color-dark);
+  padding: 10px 0 0 0;
   font-weight: bolder;
   font-size: 50px;
   font-family: 'Lobster', cursive;
 }
 
+
+
 body h2{
-  color: var(--primary-color);
-  padding: 10px 0;
+  color: var(--primary-color-dark);
   font-weight: bolder;
-  font-size: 35px;
+  font-size: 45px;
   font-family: 'Lobster', cursive;
+  padding-top: 3rem;
+}
+
+svg{
+  padding: 5px 5px 0 5px;
 }
 
 #title{
-    /* background-image: linear-gradient(to right bottom, #d9e5f9, #d1dffb, #cad8fc, #c5d1fd, #c1c9fd, #ccc7fa, #d6c5f6, #dfc4f2, #eecceb, #f6d5e7, #f8e0e7, #f6eced); */
-    background-image: linear-gradient(to right bottom, #e1eaf9, #dae5fa, #d5e0fb, #d0dafc, #cdd4fc, #d5d2fa, #ddd1f7, #e4cff3, #efd4ed, #f6dbea, #f7e3e9, #f6eced);
+    color: white;
 }
-.nav-link{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+
+nav .navbar-brand {
+  color: var(--primary-color);
 }
+nav .navbar-brand:hover{
+  color: var(--primary-color);
+}
+.navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-nav .nav-link:hover{
+  color: var(--primary-color);
+}
+
 #btn{
     background-color: var(--primary-color-dark);
     color: white;
@@ -61,9 +86,11 @@ body h2{
     height: 70%;
     margin: 0 auto;
     display: flex;
+    padding: 0;
 }
 
 .button-85 {
+  margin-bottom: 15px;
   padding: 0.6em 2em;
   border: none;
   outline: none;
@@ -128,15 +155,22 @@ body h2{
   border-radius: 10px;
 }
 
-.about{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  margin: 0 10px;
+.fade-in-down {
+  animation: fade-in-down 2s ease infinite;
 }
+@keyframes fade-in-down {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
 .about-des h2{
-  padding-top: 30px;
+  padding-top: 40px;
   text-align: center;
 }
 
@@ -145,13 +179,76 @@ padding: 10px 20%;
 }
 
 .heading{
-  font-size: 30px;
-  font-weight:bolder;
+  font-size: 32px;
+  font-weight:600;
   padding: 20px 20%;
   text-align: center;
+  color: whitesmoke;
 }
 
+.description{
+  color: rgb(168, 168, 168);
+}
 
+div.card{
+  border: none;
+  background-color: black;
+}
+
+.container h3{
+  color: white;
+}
+.container p{
+  color: grey;
+}
+
+.badge{
+  border: 3px solid #6b6be0;
+  padding-top: 15px;
+}
+span.badge.rounded-pill {
+  padding: 10px;
+  margin-top: 10px;
+}
+
+#project-link{
+  background-color: var(--primary-color-dark);
+  color: white;
+}
+
+.btn-logo{
+  background-color: var(--primary-color-dark);
+  fill: white;
+}
+
+hr.style-seven {
+  overflow: visible; /* For IE */
+  height: 30px;
+  border-style: solid;
+  border-color: white;
+  border-width: 2px 0 0 0;
+  border-radius: 50px;
+}
+hr.style-seven:before { 
+  display: block;
+  content: "";
+  height: 30px;
+  margin-top: -31px;
+  border-style: solid;
+  border-color: white;
+  border-width: 0 0 2px 0;
+  border-radius: 50px;
+}
+
+@media (max-width: 770px) {
+
+  .project-img{
+    display: none;
+  }
+  #project-section{
+    text-align: center;
+  }
+}
 
 @media (min-width: 768px) {
   .button-56 {
@@ -184,4 +281,31 @@ padding: 10px 20%;
     }
 
 
+}
+
+.line-1{
+  position: relative;
+  top: 50%;  
+  width: 34em;
+  margin: 0 auto;
+  border-right: 2px solid var(--primary-color-dark);
+  font-size: 180%;
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  transform: translateY(-50%);    
+}
+
+/* Animation */
+.anim-typewriter{
+animation: typewriter 4s steps(44) 1s 1 normal both,
+           blinkTextCursor 400ms steps(44) infinite normal;
+}
+@keyframes typewriter{
+from{width: 0;}
+to{width: 11em;}
+}
+@keyframes blinkTextCursor{
+from{border-right-color: var(--primary-color-dark);}
+to{border-right-color: transparent;}
 }
