@@ -1,3 +1,7 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+
 *{
     --primary-color: #8484e0;
     --primary-color-light: #bfbffa;
@@ -22,9 +26,7 @@ background: radial-gradient(circle, rgba(70,70,191,1) 0%, rgba(0,0,0,1) 100%); *
 body h1{
   color: var(--primary-color-dark);
   padding: 10px 0 0 0;
-  font-weight: bolder;
-  font-size: 50px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Press Start 2P', cursive;
 }
 
 
@@ -33,7 +35,7 @@ body h2{
   color: var(--primary-color-dark);
   font-weight: bolder;
   font-size: 45px;
-  font-family: 'Lobster', cursive;
+  font-family: 'Press Start 2P', cursive;
   padding-top: 3rem;
 }
 
@@ -240,8 +242,10 @@ hr.style-seven:before {
   border-radius: 50px;
 }
 
+
 @media (max-width: 770px) {
 
+  
   .project-img{
     display: none;
   }
@@ -298,8 +302,8 @@ hr.style-seven:before {
 
 /* Animation */
 .anim-typewriter{
-animation: typewriter 4s steps(44) 1s 1 normal both,
-           blinkTextCursor 400ms steps(44) infinite normal;
+animation: typewriter 4s steps(500) 1s 2 normal both,
+           blinkTextCursor 400ms steps(500) infinite normal;
 }
 @keyframes typewriter{
 from{width: 0;}
