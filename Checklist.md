@@ -14,5 +14,5 @@
 - [ ] Skills
 - [x] Projects
 - [ ] Timeline
-- [ ] CV section
-- [ ] Footer
+- [x] CV section
+- [x] Footer
