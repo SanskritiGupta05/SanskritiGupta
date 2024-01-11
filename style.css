@@ -23,6 +23,11 @@ html{
 background: radial-gradient(circle, rgba(70,70,191,1) 0%, rgba(0,0,0,1) 100%); */
 
 
+body{
+  overflow-y: scroll;
+overflow-x: hidden;
+}
+
 body h1{
   color: var(--primary-color-dark);
   padding: 10px 0 0 0;
