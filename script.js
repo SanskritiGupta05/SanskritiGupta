@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import Typewriter from 'typewriter-effect/dist/core';
 
 // var app = document.getElementById('app');
@@ -20,4 +21,28 @@ import Typewriter from 'typewriter-effect/dist/core';
 new Typewriter('#app', {
     strings: ['Hello', 'World'],
     autoStart: true,
+=======
+import Typewriter from 'typewriter-effect/dist/core';
+
+// var app = document.getElementById('app');
+
+// var typewriter = new Typewriter(app, {
+//   loop: true,
+//   delay: 75,
+// });
+
+// typewriter
+//   .pauseFor(2500)
+//   .typeString('A simple yet powerful native javascript')
+//   .pauseFor(300)
+//   .deleteChars(10)
+//   .typeString('<strong>JS</strong> plugin for a cool typewriter effect and ')
+//   .typeString('<strong>only <span style="color: #27ae60;">5kb</span> Gzipped!</strong>')
+//   .pauseFor(1000)
+//   .start();
+
+new Typewriter('#app', {
+    strings: ['Hello', 'World'],
+    autoStart: true,
+>>>>>>> e95c4a14aad777b4498789ad99cee2b4531bc878
   });
