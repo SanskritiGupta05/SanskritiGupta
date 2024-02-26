@@ -13,6 +13,6 @@
 - [x] Connect
 - [ ] Skills
 - [x] Projects
-- [ ] Timeline
+- [x] Timeline
 - [x] CV section
 - [x] Footer
